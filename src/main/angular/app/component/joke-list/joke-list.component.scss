@@ -1,0 +1,16 @@
+.joke {
+  border-left: 4px solid #DFE3E7;
+  padding: .25rem .25rem .25rem 1rem;
+  margin: 1rem 0rem;
+}
+
+.joke > .setup {
+}
+
+.joke > .punchline {
+  color: #767D84;
+}
+
+.joke > *:not(:first-child) {
+  margin-top: .25rem;
+}
