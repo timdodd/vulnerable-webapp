@@ -30,9 +30,9 @@ public class AuthenticationController {
   @PostMapping("/login")
   public ResponseEntity<UserDto> login(@RequestBody BasicCredentialsDto credentials, HttpServletResponse response) {
 
-//      Cookie cookie2 = new Cookie("lang", "en");
-//
-//      response.addCookie(cookie2);
+      Cookie cookie2 = new Cookie("lang", "en");
+
+      response.addCookie(cookie2);
 
     return userService.login(credentials.getUsername(), credentials.getPassword())
       .map(t -> {
